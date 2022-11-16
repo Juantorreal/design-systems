@@ -1,0 +1,24 @@
+{
+  "name": "@juan-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts  --format esm,cjs --dts",
+    "dev": "tsup src/index.ts  --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+  "@juan-ui/eslint-config": "*",
+    "@juan-ui/ts-config": "*",
+    "@juan-ui/tokens": "*",
+    "tsup": "^6.4.0",
+    "typescript": "^4.8.4"
+  }
+}
