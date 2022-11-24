@@ -1,5 +1,13 @@
-import { colors, fonts, fontSizes, fontWeights, lineHeights, radii, space } from "@juan-ui/tokens";
-import { createStitches } from "@stitches/react";
+import {
+  colors,
+  fonts,
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  radii,
+  space,
+} from '@juan-ui/tokens'
+import { createStitches, defaultThemeMap } from "@stitches/react";
 
 
 export const {styled, css, globalCss,keyframes, getCssText,theme, createTheme,config} = createStitches({

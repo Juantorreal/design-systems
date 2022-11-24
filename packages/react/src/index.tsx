@@ -1,16 +1,35 @@
 import { styled } from './styles'
-import { colors } from '@juan-ui/tokens'
+import { ComponentProps } from 'react'
 
-const Button = styled('button', {
+
+
+export const Button = styled('button', {
     fontFamily: '$default',
     backgroundColor: '$ignite500',
-    borderRadius: '$md'
+    borderRadius: '$sm',
+    border: 0,
+    fontWight: 'bold',
+    color: '$white',
+
+    variants: {
+        size: {
+            small: {
+                fontSize: 14,
+                padding: '$2 $4',
+            },
+            big: {
+                fontSize: 26,
+                padding: '$3 $6',
+            },
+        },
+    },
+
+
+    defaultVariants: {
+        size: 'small',
+    },
+
+  
 })
+export type ButtonProps = ComponentProps<typeof Button>
 
-
-export function App() {
-    return 
-    <h1 style={{color: colors.ignite300}}>
-        helloworld
-    </h1>
-}
