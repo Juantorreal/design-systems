@@ -1,9 +1,9 @@
-import  {Button, ButtonProps} from '@juan-ui/react'
+import  {Box} from '@juan-ui/react'
 import type { StoryObj, Meta} from '@storybook/react'
 
 
 export default {
-    title: 'Form/Button',
+    title: 'Surfaces/Box',
     component: Button,
     args: {
         children: 'Enviar',
