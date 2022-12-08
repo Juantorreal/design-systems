@@ -125,7 +125,26 @@ var Text = styled("p", {
     size: "md"
   }
 });
+
+// src/components/Heading.tsx
+var Heading = styled("h2", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray100",
+  variants: {
+    size: {
+      sm: { fontSize: "$xl" },
+      md: { fontSize: "$2xl" },
+      lg: { fontSize: "$4xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
 export {
   Box,
+  Heading,
   Text
 };
