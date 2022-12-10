@@ -22,5 +22,12 @@ export const CustomTag:StoryObj<HeadingProps> = {
    args: {
     children: 'H1 Example',
     as: 'h1',
+   },
+   parameters:{
+    docs: {
+        description: {
+            story: 'Heading h2 por padrão, é possível alterar com a prop as= "".'
+        }
+    }
    }
 }
